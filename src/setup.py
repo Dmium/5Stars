@@ -1,9 +1,8 @@
 from setuptools import setup
 
 setup(
-    name='libraryname',
-    packages=['libraryname',
-              'libraryname.samplesubmodule'],
+    name='fivestars',
+    packages=['fivestars'],
     include_package_data=True,
     install_requires=[
     ],
