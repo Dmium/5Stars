@@ -10,7 +10,4 @@ def translate_user_rating(user_rating, user_ratings):
             ))
 
 def get_normalised_rating(normalised_user_ratings):
-    return max(0,
-        min(5,
-            statistics.mean(normalised_user_ratings) + 2.5
-        ))
+    return ((5 * statistics.mean(normalised_user_ratings)) / 3) + 2.5
